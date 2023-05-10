@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 104, 1) 50%,
+    rgba(15, 133, 162, 1) 100%
+  );
+}
+
+.layout {
+  position: absolute;
+  background-color: #201e1e;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  opacity: 1;
+}
+
+header {
+  background-color: #1c1c1c;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 80%;
+  color: white;
+  font-size: 20px;
+}
+
+nav {
+  float: left;
+  width: 20%;
+  height: 100%;
+  padding: 15px;
+  line-height: 45px;
+  font-size: 20px;
+}
+
+/* layout responsivo! zeromeia additions :D */
+@media (max-width: 900px) {
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a:link {
+  color: rgb(129, 27, 155);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(129, 27, 155);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.experiment {
+  list-style: none;
+}
+
+.objectives {
+  float: right;
+  width: 80%;
+  height: auto;
+  padding: 10px;
+}
+
+input[type="checkbox"] {
+  transform: scale(2.5);
+}
+
+label {
+  font-size: 22px;
+  color: white;
+}
